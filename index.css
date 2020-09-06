@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+html {
+    color: #333333;
+}
+.header {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+
+.img-container {
+    position: absolute;
+    max-height: 400px;
+    max-width: 500px;
+    margin: 5% 0 0 2%;
+}
+
+.text-container {
+    position: absolute;
+    margin: 0 0 0 600px;
+    font-family: 'Space Mono';
+}
+.subject p{
+    max-width: 75%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    margin: 8% 0 0 0;
+}
+
+.desc {
+    max-width: 50%;
+}
+.back-button {
+    position: absolute;
+    border:0;
+    border-radius: 0;
+    padding: 23px 43px;
+    background-color:#333333;
+    color:#ffff;
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+}
+.back-button:hover{
+    background-color: #ffff;
+    color: #333333;
+    transition-duration: 0.3s;
+}
+.footer {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    left:0;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    .header {
+         margin-left: 10px;
+    }
+    .img-container {
+        left:0;
+        right:0; 
+        max-height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .text-container {
+        left: 10px;
+        right: 5px;
+        position: absolute;
+        margin: 200px 0 0 0;
+    }
+    .subject p{
+        max-width: 100%;
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -0.035em;
+    }
+    .desc {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.035em;
+    }
+    .back-button {
+        display: none;
+    }
+
+    .footer {
+        bottom: 5px;
+    }
+}
