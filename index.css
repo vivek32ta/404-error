@@ -40,6 +40,7 @@ html {
     max-width: 50%;
 }
 .back-button {
+    cursor: pointer;
     position: absolute;
     border:0;
     border-radius: 0;
